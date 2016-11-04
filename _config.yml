@@ -37,14 +37,14 @@ author:
   name: John M.
   email: "john02dev@gmail.com"
   github: JDev02    # eg. daattali
-  twitter: J02Dev   # eg. daattali
+  twitter: Dev02J   # eg. daattali
   stackoverflow: 2713888/johntrack  # eg. "3943160/daattali"
 
 # Select which links to show in the footer
 footer-links-active:
   rss: false
   facebook: false
-  email: true
+  email: false
   twitter: true
   google-plus: false
   github: true
