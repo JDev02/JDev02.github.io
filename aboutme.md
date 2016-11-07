@@ -13,6 +13,7 @@ Ese pensamiento, ademas de las ganas de siempre querer contar y compartir el "c�
 
 Me Llamo John, en la web me identifico como JDev02 (Dev02J cuando esta disponible...) soy una apacionado desarrollador Web, fánatico 
 de los lenguajes funcionales, las buenas practicas, las arquitecturas y el buen diseñó de una app, del buen uso y manejo de HTTP.
+
 Actualmente vivo en Chile, me dedico a desarrollador aplicaciones que en su mayoria son Web.
 
 En mis tiempos libres me dedico a mi familia, casa y cuando puedo (siempre se puede mientras te gusta y quieres ;) ) leo uno que otro libro o algún vídeo para ir mejorando día a día, además de aprender nuevas metodologias, tecnologias, leer blogs, y cuando puedo responder en Stackoverflow.
