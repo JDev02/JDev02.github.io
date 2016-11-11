@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Petición al servidor Stateless con token de verificación.
+title: Petición segura al servidor Stateless con token de verificación.
 subtitle: ...Sin uso de memoria, session, ni persistencia... cómo?
 ---
 
