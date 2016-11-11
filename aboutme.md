@@ -11,7 +11,7 @@ Llevo un tiempo pensando en el "si no tienes blog no existes"
 
 Ese pensamiento, además de las ganas de siempre querer contar y compartir el "cómo y porque lo hice" me ha llevado a crear este espacio en GitHub Pages, para compartir esas experiencias que a veces no tienes a quien contárselas (o mas bien sí, compañeros, quizá..pero... fuera de eso, tu abuelo o pareja no te entenderá...).
 
-Me Llamo John, en la web me identifico como JDev02 (Dev02J cuando está disponible...) soy una desarrollador Web, apasionado por .NET y Javascript, fanático de la programación/lenguajes funcionales, las buenas practicas, las arquitecturas y el buen diseñó de una app, del buen uso y manejo de HTTP.
+Me Llamo John, en la web me identifico como JDev02 (Dev02J cuando está disponible...) soy un desarrollador Web, apasionado por .NET y Javascript, fanático de la programación/lenguajes funcionales, las buenas practicas, las arquitecturas y el buen diseñó de una app, del buen uso y manejo de HTTP.
 
 Actualmente vivo en Chile, me dedico a desarrollador aplicaciones que en su mayoría son Web.
 
