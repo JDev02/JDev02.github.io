@@ -5,7 +5,7 @@ subtitle: ...Sin uso de memoria, session, ni persistencia... cómo?
 ---
 
 Hola, este es mi primer post.
-Cómo menciono en About Me: “si no tienes blog no existes”...
+Cómo mencioné en About Me: “si no tienes blog no existes”...
 
 Es por eso que aquí vamos, espero tomarle el gusto a esto del blog, y seguir aportando y ayudando con experiencias día a día.
 Hoy voy a comentar como resolví de una forma rápida y sencilla un problema que teníamos cuando se le intento añadir algo de seguridad a peticiones get/post sensibles/delicadas de una App en MVC 3.
