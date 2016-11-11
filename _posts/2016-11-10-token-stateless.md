@@ -8,9 +8,9 @@ Hola, este es mi primer post.
 Cómo mencioné en About Me: “si no tienes blog no existes”...
 
 Es por eso que aquí vamos, espero tomarle el gusto a esto del blog, y seguir aportando y ayudando con experiencias día a día.
-<br>Hoy voy a comentar como resolver de una forma rápida y sencilla un problema que suele suceder cuando se le intenta añadir algo de seguridad a peticiones get/post sensibles/delicadas de una App en MVC 3.
-Normalmente cuando queremos desplegar un documento pdf, imagen u otro hacemos la petición directa al archivo, por lo cual no existe problema. 
-Muchas veces nos piden agregarle un poco de seguridad a estas acciones, y la primera solución que sale al aire es; pedir el mismo documento, pero a una suerte de api, donde podríamos tener app/resource/{id} allí podríamos hacer un par de checkeos de session actual del usuario, seguridad, si tiene acceso para ese archivo, etc, etc. 
+<br>Hoy voy a comentar como resolver de una forma rápida y sencilla un problema que suele suceder cuando se intenta añadir algo de seguridad a peticiones get/post sensibles/delicadas de una App en MVC .NET.<br>
+Normalmente cuando se quiere desplegar un documento pdf, imagen u otro hacemos la petición directa al archivo, por lo cual no existe problema. <br>
+Muchas veces el requerimiento es agregarle un poco de seguridad a estas acciones, y la primera solución que sale al aire es; pedir el mismo documento, pero a una suerte de api, donde podríamos tener app/resource/{id} allí podríamos hacer un par de checkeos de session actual del usuario, seguridad, si tiene acceso para ese archivo, etc, etc. 
 El problema surge cuando tienes un escenario similar en una web (que para aclarar, esta muy mal diseñada, tiene uso de Session,TempData,etc por todo su código, etc) y debes controlar el acceso a esos GET/POST. 
 Entonces, podría darse que el usuario tenga todos los permisos para ver documentos y sepa que haciendo app/resource/N obtendria un documento X, y, es eso es lo que queremos controlar.
 
