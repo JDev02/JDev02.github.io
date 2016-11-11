@@ -41,8 +41,8 @@ En un controller vamos a definir un método que será él que se encargará de a
         {
             //checkeos varios de session seguridad, integridad etc...
 
-            
-            //el parametro id ya puede venir 
+
+            //el parametro id ya puede venir encriptado, o ser el parametro "real"
             var result = new LinkResourceDescriptor()
             {
                 HttpAction = Common.Response.Constants.HttpMethodTypes.Get,
