@@ -24,7 +24,7 @@ Mejorándolo...
 1.-En un ataque de iluminación dices, "ah!, claro, le agrego un parámetro encriptado que sea 'valido' y si es válido le permito ver el archivo, genial, esa es la solución"... <br>Luego el usuario se da cuenta que puede cambiar el id del documento, manteniendo el "token", y podrá revisar los otros documentos perfectamente, ya que este token sigue siendo "valido"
 
 2.-Bueno... ya sé que la primera versión no es de las mejores, asi que en otro ataque de genialidad, te dices; "Le generamos un token valido para la petición de ese documento! y todo queda ok!" el jefe queda feliz y todo sigue su camino. <br>
-<b>Por qué No me gusta?</b><br> ...A las semanas se dan cuenta que los usuarios se están compartiendo los links por correo y pueden acceder a los documentos.... el link tiene un token "valido" para ese documento.
+<b>Por qué no me gusta?</b><br> ...A las semanas se dan cuenta que los usuarios se están compartiendo los links por correo y pueden acceder a los documentos.... el link tiene un token "valido" para ese documento.
 
 Versión final:
 --------------
