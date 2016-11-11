@@ -154,5 +154,9 @@ Hasta aquí llega este post, (ya subiré el código a github) como se puede ver,
 En el próximo post explicare como crear una capa Tenant para guarda el dato mas usado por muchos desarrolladores (user, id, name, customer) y luego como incluirle una capa de cache al mismo Tenant, sin usar session.<br>
 Cuesta mucho dejar de usar Session/TempData, etc por lo cómoda, pero, si queremos aplicaciones escalables debemos intentarlo.
 
+
+PS: Por si te lo preguntas y te llegas a decir: "Pero si con un token que para mi sea válido bastaba, o con uno que se genere en base a un string que uno mismo le indique... la gran gracia de este método es que se convierte en una <b>fabrica totalmente autosuficiente</b>, ya que genera de acuerdo a:<br>
+KeyPeticion->TokenAutorización 
+
 Saludos!<br>
 John.
