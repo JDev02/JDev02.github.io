@@ -68,6 +68,7 @@ Como se ve, la clave está en la clase estática AuthorizationTokenHelper y su m
             return CreateTokenFor(key);
         }
 
+        
 		private static string CreateTokenFor(string text)
         {
             string prefix = CreatePrefix(text);
