@@ -7,11 +7,12 @@ subtitle: MultiTetant, Stateless. Sin Session, y datos mínimos del tenant y aut
 Hola, hoy mostraré como crear una suerte de Tenant Factory para aplicaciones web multi tenant (en realidad es un wrapper).<br>
 En esta oportunidad la aplicación afectada tenia un Front End bastante pulido, pero a pesar de eso, el back respondía de forma casi sincrónica, por lo cual se tuvo que refactorizar.
 
-En mi experiencia desarrollando aplicaciones web, muchas veces me he encontrado con aplicaciones multi tenant (aka multi empesa, multi inquilino...) donde la mayoría de los proyectos con los que he tenido que trabajar están hechos básicamente apoyándose de la Session (System.Web) con la cual manejan lo datos de Session de cada usuario, guardando como mínimo estos dos datos:
-1.-Usuario
+En mi experiencia desarrollando aplicaciones web, muchas veces me he encontrado con aplicaciones multi tenant (aka multi empesa, multi inquilino...) donde la mayoría de los proyectos con los que he tenido que trabajar están hechos básicamente apoyándose de la Session (System.Web) con la cual manejan lo datos de Session de cada usuario, guardando como mínimo estos dos datos:<br>
+1.-Usuario<br>
 2.-Empresa
+<br>
+Otros más osados guardan directamente connectionString...<br>
 
-Otros más osados guardan directamente connectionString...
 
 En primer lugar, ya he hablado sobre lo mal que esta usar Session en aplicaciones web, y lo que significa mantener datos perssitentes de configuración/navegación en la memoria de la aplicación (por ejemplo ante un reinicio de la app, todos los usuarios perderían lo que están haciendo en ese momento... su Session ya no sería válida para después del reinicio... se podría usar otro provider de session, pero aun asi no lo recomiendo. Las peticiones a la Session se bloquean (es un objeto "seguro"), por lo cual no consigues mucho creando un front-end asíncrono y elegante, si tu back es sincrono (una suerte de fifo)).
 
