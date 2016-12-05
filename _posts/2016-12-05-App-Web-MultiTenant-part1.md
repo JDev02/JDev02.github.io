@@ -179,7 +179,7 @@ Y para utilizarla podemos crear un método de login similar a este:
         [HttpPost]
         public ActionResult LogOff()
         {
-            Tenant.LogOut();
+            Tenant.Current.LogOut();
             return RedirectToAction("Login", "Account");
         }
 ```
