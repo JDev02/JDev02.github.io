@@ -14,13 +14,14 @@ En mi experiencia desarrollando aplicaciones web, muchas veces me he encontrado 
 Otros más osados guardan directamente connectionString...<br>
 
 
-En primer lugar, ya he hablado sobre lo mal que esta usar Session en aplicaciones web, y lo que significa mantener datos perssitentes de configuración/navegación en la memoria de la aplicación (por ejemplo ante un reinicio de la app, todos los usuarios perderían lo que están haciendo en ese momento... su Session ya no sería válida para después del reinicio... se podría usar otro provider de session, pero aun asi no lo recomiendo. Las peticiones a la Session se bloquean (es un objeto "seguro"), por lo cual no consigues mucho creando un front-end asíncrono y elegante, si tu back es sincrono (una suerte de fifo)).
+En primer lugar, ya he hablado sobre lo mal que esta usar Session en aplicaciones web, y lo que significa mantener datos perssitentes de configuración/navegación en la memoria de la aplicación (por ejemplo ante un reinicio de la app, todos los usuarios perderían lo que están haciendo en ese momento... su Session ya no sería válida para después del reinicio... se podría usar otro provider de session, pero aun asi no lo recomiendo.<br> Las peticiones a la Session se bloquean (es un objeto "seguro"), por lo cual no consigues mucho creando un front-end asíncrono y elegante, si tu back es sincrono (una suerte de fifo)).
 
 La idea es que ésta misma solución la puedan llevar a una dll distinta a la de la aplicación, para luego poder compartir con distintas Areas u otras webs de su misma propiedad, también sería apropiado aplicar algo de SOLID, para convertirla en una interfaz, y mejorar algunos aspectos para después si se requiere poder inyectar. Pero vamos, para el ejemplo se usará un método estático que es el encargado de crear/validar.
 
 Los datos serán guardados en cookies, ya que el front usaba peticiones Ajax, sin configurar un método/token de autentificación (ni hablar de cabeceras o jwt)
 
-En la aplicación que tocó refactorizar existián básicamente dos propiedades que eran utilizadas para identificar la empresa donde estaba logeado el usuario actual, una era el usuario, y otra para la empresa (Anteriormente se guardaba en Session["Usuario"], Session["Empresa"]....) Estas solo disponen de Get, el set es privado, y en realidad no existe, ya que la única forma de crearlos es a través del método Tenant.Create({...})
+En la aplicación que tocó refactorizar existián básicamente dos propiedades que eran utilizadas para identificar la empresa donde estaba logeado el usuario actual, una era el usuario, y otra para la empresa (Anteriormente se guardaba en Session["Usuario"], Session["Empresa"]....)<br>
+En la solucion Tenant que estamos viendo estas propiedades disponen de Get, el Set es privado, y en realidad no existe, ya que la única forma de crearlos es a través del método Tenant.Create({...})
 
 ```cs
         public string Empresa
