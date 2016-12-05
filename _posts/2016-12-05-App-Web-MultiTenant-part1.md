@@ -198,7 +198,7 @@ generando una propiedad similar a esta:
 ```
 
 
-Antes de terminar, debo mencionar que con esto no consiguen un backend asyn, pero definitivamente lo mejoran. <br>Ahora si a sus peticiones/métodos/Actions que utilicen alguno de los datos del tenant, los crean con Async Result, ahí lograran apreciar el cambio.<br> Otra cosa no menos importante, es que toda esta solución aplica para aplicaciones con mucha concurrencia, donde les sugiero trabajen orientado a datos y separen la V (de la estructura típica que ofrece MVC .NET) en otra subcapa MVW (esta corre en el navegador)
+Antes de terminar, debo mencionar que con esto no consiguen un backend asyn, pero definitivamente lo mejoran. <br>Ahora si a sus peticiones/métodos/Actions que utilicen alguno de los datos del tenant, los crean con Async Result, ahí lograran apreciar el cambio.<br> Otra cosa no menos importante, es que toda esta solución aplica para aplicaciones con mucha concurrencia, donde les sugiero trabajen orientado a datos y separen la V (de la estructura típica que ofrece MVC .NET) en otra subcapa MVW (model view whatever; esta corre en el navegador)
 
 Espero les sirva,
 
