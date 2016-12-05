@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Aplicación Web Stateless MultiTetant Parte 1
-subtitle: MultiTetant, Stateless. Sin Session, y datos mínimos de autorización (Empresa, User, etc)
+subtitle: MultiTetant, Stateless. Sin Session, y datos mínimos del tenant y autorización (Empresa, User, etc)
 ---
 
-Hola, hoy mostraré como crear una suerte de Tenant Factory para aplicaciones web multi tenant.
-En esta oportunidad la aplicación afectada tenia un Front End bastante pulido, pero a pesar de eso, el back respondía de forma casi sincrónica, por lo cual se comenzó a refactorizar.
+Hola, hoy mostraré como crear una suerte de Tenant Factory para aplicaciones web multi tenant (en realidad es un wrapper).<br>
+En esta oportunidad la aplicación afectada tenia un Front End bastante pulido, pero a pesar de eso, el back respondía de forma casi sincrónica, por lo cual se tuvo que refactorizar.
 
-En mi experiencia desarrollando aplicaciones web, siempre me he encontrado con aplicaciones que son multi tenant (aka multi empesa, multi inquilino...) 
-También la mayoría de los proyectos con los que he tenido que trabajar están hechos básicamente apoyándose de la Session (System.Web) con la cual manejan lo datos de Session de cada usuario, guardando como mínimo estos dos datos:
+En mi experiencia desarrollando aplicaciones web, muchas veces me he encontrado con aplicaciones multi tenant (aka multi empesa, multi inquilino...) donde la mayoría de los proyectos con los que he tenido que trabajar están hechos básicamente apoyándose de la Session (System.Web) con la cual manejan lo datos de Session de cada usuario, guardando como mínimo estos dos datos:
 1.-Usuario
 2.-Empresa
 
