@@ -21,7 +21,7 @@ La idea es que ésta misma solución la puedan llevar a una dll distinta a la de
 Los datos serán guardados en cookies, ya que el front usaba peticiones Ajax, sin configurar un método/token de autentificación (ni hablar de cabeceras o jwt)
 
 En la aplicación que tocó refactorizar existián básicamente dos propiedades que eran utilizadas para identificar la empresa donde estaba logeado el usuario actual, una era el usuario, y otra para la empresa (Anteriormente se guardaba en Session["Usuario"], Session["Empresa"]....)<br>
-En la solucion Tenant que estamos viendo estas propiedades disponen de Get, el Set es privado, y en realidad no existe, ya que la única forma de crearlos es a través del método Tenant.Create({...})
+En la solucion Tenant que estamos viendo estas propiedades disponen de Get, el Set es privado, y en realidad no existe, ya que la única forma de crearlos es a través del método Tenant.Current.Create({...})
 
 ```cs
         public string Empresa
