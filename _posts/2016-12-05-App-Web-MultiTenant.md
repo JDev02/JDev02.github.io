@@ -13,6 +13,7 @@ En mi experiencia desarrollando aplicaciones web, muchas veces me he encontrado 
 <br>
 Otros más osados guardan directamente connectionString...<br>
 
+
 En primer lugar, ya he hablado sobre lo mal que esta usar Session en aplicaciones web, y lo que significa mantener datos perssitentes de configuración/navegación en la memoria de la aplicación (por ejemplo ante un reinicio de la app, todos los usuarios perderían lo que están haciendo en ese momento... su Session ya no sería válida para después del reinicio... se podría usar otro provider de session, pero aun asi no lo recomiendo. Las peticiones a la Session se bloquean (es un objeto "seguro"), por lo cual no consigues mucho creando un front-end asíncrono y elegante, si tu back es sincrono (una suerte de fifo)).
 
 La idea es que ésta misma solución la puedan llevar a una dll distinta a la de la aplicación, para luego poder compartir con distintas Areas u otras webs de su misma propiedad, también sería apropiado aplicar algo de SOLID, para convertirla en una interfaz, y mejorar algunos aspectos para después si se requiere poder inyectar. Pero vamos, para el ejemplo se usará un método estático que es el encargado de crear/validar.
