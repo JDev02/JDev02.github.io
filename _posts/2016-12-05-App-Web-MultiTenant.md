@@ -123,7 +123,7 @@ Otro metodo para hacer logout:
         }
 ```
 
-Y finalmente el acceso a de cada tenant por cada request
+Y finalmente siguiendo el estilo de microsoft (access by current propertie) el acceso a de cada tenant por cada request
 
 
 ```cs
@@ -140,6 +140,46 @@ Y finalmente el acceso a de cada tenant por cada request
             //Objeto poblado para cuando sea necesario, para este ejemplo no hacia falta ya que las properties son
             //lazyloading... para optimiziar es necesairo no traer el objeto poblado completamente por cada GetCurrent().
             return new Tenant();
+        }
+```
+
+
+Y para utilizarla podemos crear un método de login similar a este:
+
+```cs
+        [HttpPost]
+        public ActionResult Login(LoginModel model, string returnUrl)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    //process login...
+
+                    //Login().IsValid...
+
+                    Tenant.Create(model.UserName, model.CustomerName);
+                    //redirect to home page...
+                }
+                catch (Exception e)
+                {
+                    ModelState.AddModelError("", e.Message);
+                    return View(model);
+                }
+                return RedirectToLocal(returnUrl);
+            }
+
+            // If we got this far, something failed, redisplay form
+            ModelState.AddModelError("", "The user name or password provided is incorrect.");
+            return View(model);
+        }
+
+
+        [HttpPost]
+        public ActionResult LogOff()
+        {
+            Tenant.LogOut();
+            return RedirectToAction("Login", "Account");
         }
 ```
 
