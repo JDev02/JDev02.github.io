@@ -105,7 +105,7 @@ Proveemos de algunos datos de utilidades para ciertos escenarios:
         }
 ```
 
-Y finalizacion con un metodo para hacer logout:
+Otro metodo para hacer logout:
 
 
 ```cs
@@ -123,6 +123,25 @@ Y finalizacion con un metodo para hacer logout:
         }
 ```
 
+Y finalmente el acceso a de cada tenant por cada request
+
+
+```cs
+        public static Tenant Current
+        {
+            get
+            {
+                return GetCurrent();
+            }
+        }
+
+        private static Tenant GetCurrent()
+        {
+            //Objeto poblado para cuando sea necesario, para este ejemplo no hacia falta ya que las properties son
+            //lazyloading... para optimiziar es necesairo no traer el objeto poblado completamente por cada GetCurrent().
+            return new Tenant();
+        }
+```
 
 
 
