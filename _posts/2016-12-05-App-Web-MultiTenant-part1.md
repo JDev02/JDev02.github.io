@@ -56,7 +56,7 @@ En la solucion Tenant que estamos viendo estas propiedades disponen de Get, el S
 ```
 
 
-Luego creamos un constructor privado para evitar que alguien en un lugar equivocado logee más veces a un usuario, asi le delegamos la responsabilidad al metodo static Create. Así:
+Luego creamos un constructor privado para evitar que alguien en un lugar equivocado logee más veces a un usuario, asi solo le delegamos la responsabilidad al metodo static Create:
 
 
 ```cs
