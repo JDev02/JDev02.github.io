@@ -184,6 +184,10 @@ Y para utilizarla podemos crear un método de login similar a este:
         }
 ```
 
+Acá les dejo el código:
+
+https://github.com/JDev02/-TenantWebExample
+
 
 
 Demás está decir que la pueden adaptar a su necesidad e incluirle propiedades, o funcionalidad extra... y que si bien ya existen soluciones similares (de forma static) esta es custom, y dejaré el codigo en mi github para que la puedan bajar, modificar y utilizar. <br>En la próxima parte veremos como agregar una Session/Cache a cada Tenant en especial
