@@ -43,6 +43,9 @@ y la salida
                 //recorre el resto de elementos
                 restLists.ForEach(re =>
                 {
+                    //versión corta
+                    //result.Add(new List<object>(){ fl }.Union(re).ToList());
+
                     List<object> resultElement = new List<object>();
                     //añade el item del primer elemento
                     resultElement.Add(fl);
