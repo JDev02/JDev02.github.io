@@ -58,9 +58,12 @@ y la salida
         }
 ```
 
+
 Espero les sirva,   
 
 Saludos!
+
+PS:El static es porque lo eché a correr en una aplicación hecha a la rápida de consola.
 
 
 Saludos!<br>
